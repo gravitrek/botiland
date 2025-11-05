@@ -6,40 +6,44 @@ class Payment(models.Model):
     """Payment records for bookings"""
 
     PAYMENT_METHODS = [
-        ('bank_transfer', 'Bank Transfer'),
-        ('cash', 'Cash'),
-        ('check', 'Check'),
-        ('other', 'Other'),
+        ("bank_transfer", "Bank Transfer"),
+        ("cash", "Cash"),
+        ("check", "Check"),
+        ("other", "Other"),
     ]
 
     STATUS_CHOICES = [
-        ('pending', 'Pending'),
-        ('verified', 'Verified'),
-        ('rejected', 'Rejected'),
+        ("pending", "Pending"),
+        ("verified", "Verified"),
+        ("rejected", "Rejected"),
     ]
 
-    booking = models.ForeignKey('bookings.Booking', on_delete=models.CASCADE, related_name='payments')
+    booking = models.ForeignKey(
+        "bookings.Booking", on_delete=models.CASCADE, related_name="payments"
+    )
     amount = models.DecimalField(max_digits=10, decimal_places=2)
-    currency = models.CharField(max_length=3, default='MAD')
+    currency = models.CharField(max_length=3, default="MAD")
     payment_method = models.CharField(max_length=20, choices=PAYMENT_METHODS)
 
     # Payment details
     transaction_reference = models.CharField(max_length=100, blank=True)
     payment_date = models.DateTimeField()
-    proof_of_payment = models.ImageField(upload_to='payment_proofs/', null=True, blank=True)
+    proof_of_payment = models.ImageField(
+        upload_to="payment_proofs/", null=True, blank=True
+    )
 
     # Bank details used for this payment
     bank_name = models.CharField(max_length=100, blank=True)
     bank_account = models.CharField(max_length=100, blank=True)
 
     # Verification
-    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='pending')
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default="pending")
     verified_by = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.SET_NULL,
         null=True,
         blank=True,
-        related_name='verified_payments'
+        related_name="verified_payments",
     )
     verified_at = models.DateTimeField(null=True, blank=True)
     verification_notes = models.TextField(blank=True)
@@ -48,7 +52,7 @@ class Payment(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ['-created_at']
+        ordering = ["-created_at"]
 
     def __str__(self):
         return f"Payment #{self.id} - {self.booking.booking_code} - {self.amount} {self.currency}"
@@ -56,17 +60,18 @@ class Payment(models.Model):
 
 class PaymentInstruction(models.Model):
     """Payment instructions that coaches provide"""
+
     coach = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
-        related_name='payment_instructions'
+        related_name="payment_instructions",
     )
     formation = models.ForeignKey(
-        'formations.Formation',
+        "formations.Formation",
         on_delete=models.CASCADE,
-        related_name='payment_instructions',
+        related_name="payment_instructions",
         null=True,
-        blank=True
+        blank=True,
     )
 
     # Bank details
@@ -86,7 +91,7 @@ class PaymentInstruction(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ['-created_at']
+        ordering = ["-created_at"]
 
     def __str__(self):
         if self.formation:
@@ -96,12 +101,15 @@ class PaymentInstruction(models.Model):
 
 class Reconciliation(models.Model):
     """Track payment reconciliation by coaches"""
+
     coach = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
-        related_name='reconciliations'
+        related_name="reconciliations",
     )
-    formation = models.ForeignKey('formations.Formation', on_delete=models.CASCADE, related_name='reconciliations')
+    formation = models.ForeignKey(
+        "formations.Formation", on_delete=models.CASCADE, related_name="reconciliations"
+    )
 
     # Financial summary
     total_bookings = models.IntegerField(default=0)
@@ -123,7 +131,7 @@ class Reconciliation(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ['-created_at']
+        ordering = ["-created_at"]
 
     def __str__(self):
         return f"Reconciliation: {self.formation.title} ({self.period_start} to {self.period_end})"

@@ -5,5 +5,5 @@ router = DefaultRouter()
 # Will add BookingViewSet here
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path("", include(router.urls)),
 ]

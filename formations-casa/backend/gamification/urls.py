@@ -5,5 +5,5 @@ router = DefaultRouter()
 # Will add gamification ViewSets here
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path("", include(router.urls)),
 ]

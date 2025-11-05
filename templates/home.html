@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaGoals - Achieve Your Mega Goals</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 800px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        .cta {
+            margin-top: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            margin: 0.5rem;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        .stats {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .stat {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MegaGoals</h1>
+        <p class="tagline">Achieve Your Mega Goals</p>
+
+        <p style="font-size: 1.2rem;">The ultimate universal goal-achievement platform that empowers anyone to set, structure, track, and achieve any life goal.</p>
+
+        <div class="features">
+            <div class="feature">
+                <h3>🎯 Goal Tracking</h3>
+                <p>Hierarchical goal structure with milestones and actions</p>
+            </div>
+            <div class="feature">
+                <h3>🏆 Gamification</h3>
+                <p>XP, levels, badges, and leaderboards</p>
+            </div>
+            <div class="feature">
+                <h3>🤖 AI Coach</h3>
+                <p>Personalized insights and guidance</p>
+            </div>
+            <div class="feature">
+                <h3>👥 Community</h3>
+                <p>Connect with like-minded achievers</p>
+            </div>
+        </div>
+
+        <div class="cta">
+            {% if user.is_authenticated %}
+                <a href="{% url 'users:dashboard' %}" class="btn">Go to Dashboard</a>
+                <a href="{% url 'goals:list' %}" class="btn">My Goals</a>
+            {% else %}
+                <a href="{% url 'account_signup' %}" class="btn">Get Started</a>
+                <a href="{% url 'account_login' %}" class="btn">Sign In</a>
+            {% endif %}
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">∞</div>
+                <div>Possibilities</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">100%</div>
+                <div>You</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">🚀</div>
+                <div>Growth</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

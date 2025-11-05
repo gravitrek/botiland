@@ -29,7 +29,7 @@ from rest_framework import permissions
 schema_view = get_schema_view(
     openapi.Info(
         title="Formations.casa API",
-        default_version='v1',
+        default_version="v1",
         description="API for the Formations.casa platform - Training marketplace in Casablanca",
         contact=openapi.Contact(email="support@formations.casa"),
     ),
@@ -42,22 +42,19 @@ router = DefaultRouter()
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-
     # API Documentation
-    path('api/docs/', schema_view.with_ui('swagger', cache_timeout=0), name='api-docs'),
-    path('api/redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='api-redoc'),
-
+    path("api/docs/", schema_view.with_ui("swagger", cache_timeout=0), name="api-docs"),
+    path("api/redoc/", schema_view.with_ui("redoc", cache_timeout=0), name="api-redoc"),
     # JWT Authentication
-    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
-    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-
+    path("api/token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
+    path("api/token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
     # App URLs
-    path('api/', include(router.urls)),
-    path('api/accounts/', include('accounts.urls')),
-    path('api/formations/', include('formations.urls')),
-    path('api/centers/', include('centers.urls')),
-    path('api/bookings/', include('bookings.urls')),
-    path('api/gamification/', include('gamification.urls')),
+    path("api/", include(router.urls)),
+    path("api/accounts/", include("accounts.urls")),
+    path("api/formations/", include("formations.urls")),
+    path("api/centers/", include("centers.urls")),
+    path("api/bookings/", include("bookings.urls")),
+    path("api/gamification/", include("gamification.urls")),
 ]
 
 # Media files

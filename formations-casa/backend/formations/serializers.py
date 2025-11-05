@@ -6,19 +6,19 @@ from accounts.serializers import UserSerializer
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = '__all__'
+        fields = "__all__"
 
 
 class FormationTypeSerializer(serializers.ModelSerializer):
     class Meta:
         model = FormationType
-        fields = '__all__'
+        fields = "__all__"
 
 
 class CurriculumSerializer(serializers.ModelSerializer):
     class Meta:
         model = Curriculum
-        fields = '__all__'
+        fields = "__all__"
 
 
 class FormationListSerializer(serializers.ModelSerializer):
@@ -28,11 +28,25 @@ class FormationListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Formation
         fields = [
-            'id', 'title', 'slug', 'short_description', 'coach',
-            'category', 'level', 'cover_image', 'delivery_mode',
-            'start_date', 'end_date', 'duration_hours', 'price',
-            'currency', 'max_participants', 'current_participants',
-            'average_rating', 'status', 'is_featured'
+            "id",
+            "title",
+            "slug",
+            "short_description",
+            "coach",
+            "category",
+            "level",
+            "cover_image",
+            "delivery_mode",
+            "start_date",
+            "end_date",
+            "duration_hours",
+            "price",
+            "currency",
+            "max_participants",
+            "current_participants",
+            "average_rating",
+            "status",
+            "is_featured",
         ]
 
 
@@ -44,17 +58,28 @@ class FormationDetailSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Formation
-        fields = '__all__'
-        read_only_fields = ['views_count', 'average_rating', 'total_ratings', 'current_participants']
+        fields = "__all__"
+        read_only_fields = [
+            "views_count",
+            "average_rating",
+            "total_ratings",
+            "current_participants",
+        ]
 
 
 class FormationCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Formation
-        exclude = ['coach', 'views_count', 'average_rating', 'total_ratings', 'current_participants']
+        exclude = [
+            "coach",
+            "views_count",
+            "average_rating",
+            "total_ratings",
+            "current_participants",
+        ]
 
     def create(self, validated_data):
-        validated_data['coach'] = self.context['request'].user
+        validated_data["coach"] = self.context["request"].user
         return super().create(validated_data)
 
 
@@ -63,9 +88,9 @@ class FormationReviewSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = FormationReview
-        fields = '__all__'
-        read_only_fields = ['user']
+        fields = "__all__"
+        read_only_fields = ["user"]
 
     def create(self, validated_data):
-        validated_data['user'] = self.context['request'].user
+        validated_data["user"] = self.context["request"].user
         return super().create(validated_data)
