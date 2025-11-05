@@ -1,32 +1,18 @@
+import Navbar from '@/components/Navbar';
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50">
-      {/* Navigation */}
-      <nav className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex justify-between items-center">
-            <h1 className="text-2xl font-bold text-primary-600">formations.casa</h1>
-            <div className="space-x-4">
-              <a href="/formations" className="text-gray-700 hover:text-primary-600">Formations</a>
-              <a href="/centers" className="text-gray-700 hover:text-primary-600">Centers</a>
-              <a href="/coaches" className="text-gray-700 hover:text-primary-600">Coaches</a>
-              <a href="/login" className="text-primary-600 hover:text-primary-700">Login</a>
-              <a href="/register" className="bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700">
-                Sign Up
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-primary-600 to-primary-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold mb-4">
-            Professional Training in Casablanca
+            Formation Professionnelle à Casablanca
           </h1>
           <p className="text-xl mb-8">
-            Discover and book the best training courses in Morocco
+            Découvrez et réservez les meilleures formations au Maroc
           </p>
           <div className="flex gap-4 justify-center">
             <a href="/formations" className="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100">
