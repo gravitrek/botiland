@@ -1,0 +1,186 @@
+{
+  "nav": {
+    "home": "Home",
+    "formations": "Trainings",
+    "centers": "Centers",
+    "coaches": "Instructors",
+    "login": "Login",
+    "register": "Sign Up",
+    "dashboard": "Dashboard",
+    "logout": "Logout",
+    "admin": "Admin",
+    "points": "pts"
+  },
+  "hero": {
+    "title": "Professional Training in Casablanca",
+    "subtitle": "Discover and book the best training courses in Morocco",
+    "browseFormations": "Browse Trainings",
+    "becomeCoach": "Become an Instructor"
+  },
+  "features": {
+    "title": "How it Works",
+    "browse": {
+      "title": "Explore",
+      "description": "Discover hundreds of professional training courses"
+    },
+    "enroll": {
+      "title": "Enroll & Learn",
+      "description": "Sign up, receive payment instructions, and start learning"
+    },
+    "earn": {
+      "title": "Earn Badges",
+      "description": "Complete courses, earn points, and unlock achievements"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Login to your account",
+      "username": "Username",
+      "password": "Password",
+      "remember": "Remember me",
+      "forgot": "Forgot password?",
+      "submit": "Sign In",
+      "loading": "Signing in...",
+      "noAccount": "Or",
+      "createAccount": "create a new account"
+    },
+    "register": {
+      "title": "Create an account",
+      "role": "I am",
+      "roleUser": "Learner",
+      "roleCoach": "Instructor / Coach",
+      "roleCenter": "Training Center",
+      "roleUserDesc": "Discover and take trainings",
+      "roleCoachDesc": "Create and manage your own trainings",
+      "roleCenterDesc": "Manage your center and rooms",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "username": "Username",
+      "email": "Email",
+      "phone": "Phone",
+      "phonePlaceholder": "+212 6XX XX XX XX",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "passwordHint": "Minimum 8 characters",
+      "submit": "Create my account",
+      "loading": "Creating account...",
+      "hasAccount": "Or",
+      "loginLink": "login to your existing account",
+      "terms": "By creating an account, you agree to our terms of service and privacy policy.",
+      "approval": "Your account will be subject to admin approval."
+    }
+  },
+  "formations": {
+    "title": "All Trainings",
+    "search": "Search for a training...",
+    "allLevels": "All levels",
+    "allCategories": "All categories",
+    "levels": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced",
+      "all": "All levels"
+    },
+    "delivery": {
+      "in_person": "🏢 In-Person",
+      "remote": "💻 Online",
+      "hybrid": "🔀 Hybrid"
+    },
+    "enrolled": "enrolled",
+    "loading": "Loading trainings...",
+    "noResults": "No trainings found.",
+    "enrollNow": "Enroll Now",
+    "price": "Training Price",
+    "startDate": "Start Date",
+    "duration": "Duration",
+    "spotsAvailable": "Spots Available",
+    "averageRating": "Average Rating",
+    "center": "Center",
+    "program": "Program",
+    "prerequisites": "Prerequisites",
+    "description": "Description",
+    "instructor": "Instructor",
+    "level": "Level",
+    "mode": "Mode",
+    "paymentNotice": "After enrollment, you will receive payment instructions via email"
+  },
+  "dashboard": {
+    "welcome": "Welcome",
+    "userSubtitle": "Discover new trainings and develop your skills",
+    "coachSubtitle": "Manage your trainings and track your students",
+    "centerSubtitle": "Manage your center and training rooms",
+    "adminSubtitle": "Administer the platform and manage content",
+    "level": "Level",
+    "totalPoints": "Total Points",
+    "credits": "Credits",
+    "status": "Status",
+    "approved": "✓ Approved",
+    "pending": "⏳ Pending",
+    "pendingApproval": {
+      "title": "Account pending approval",
+      "coach": "Your instructor account is being verified by our team. You will be notified by email once your account is approved.",
+      "center": "Your training center account is being verified by our team. You will be notified by email once your account is approved."
+    },
+    "quickActions": {
+      "myFormations": {
+        "title": "My Trainings",
+        "description": "Manage and create new trainings"
+      },
+      "myStudents": {
+        "title": "My Students",
+        "description": "Track your students' progress"
+      },
+      "payments": {
+        "title": "Payments",
+        "description": "Manage payments and reconciliation"
+      },
+      "rooms": {
+        "title": "My Rooms",
+        "description": "Manage rooms and availability"
+      },
+      "bookings": {
+        "title": "Bookings",
+        "description": "View all bookings"
+      },
+      "stats": {
+        "title": "Statistics",
+        "description": "Analyze performance"
+      },
+      "explore": {
+        "title": "Explore",
+        "description": "Discover new trainings"
+      },
+      "enrolledFormations": {
+        "title": "My Trainings",
+        "description": "View my ongoing trainings"
+      },
+      "badges": {
+        "title": "Badges & Points",
+        "description": "View my achievements"
+      },
+      "profile": {
+        "title": "My Profile",
+        "description": "Manage your personal information"
+      }
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "viewAll": "View All",
+    "more": "More",
+    "less": "Less"
+  }
+}

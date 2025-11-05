@@ -1,0 +1,186 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "formations": "Formations",
+    "centers": "Centres",
+    "coaches": "Formateurs",
+    "login": "Connexion",
+    "register": "Inscription",
+    "dashboard": "Tableau de Bord",
+    "logout": "Déconnexion",
+    "admin": "Administration",
+    "points": "pts"
+  },
+  "hero": {
+    "title": "Formation Professionnelle à Casablanca",
+    "subtitle": "Découvrez et réservez les meilleures formations au Maroc",
+    "browseFormations": "Explorer les Formations",
+    "becomeCoach": "Devenir Formateur"
+  },
+  "features": {
+    "title": "Comment ça marche",
+    "browse": {
+      "title": "Explorer",
+      "description": "Découvrir des centaines de formations professionnelles"
+    },
+    "enroll": {
+      "title": "S'inscrire & Apprendre",
+      "description": "Inscrivez-vous, recevez les instructions de paiement et commencez"
+    },
+    "earn": {
+      "title": "Gagner des Badges",
+      "description": "Complétez des formations, gagnez des points et débloquez des accomplissements"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Connexion à votre compte",
+      "username": "Nom d'utilisateur",
+      "password": "Mot de passe",
+      "remember": "Se souvenir de moi",
+      "forgot": "Mot de passe oublié?",
+      "submit": "Se connecter",
+      "loading": "Connexion en cours...",
+      "noAccount": "Ou",
+      "createAccount": "créez un nouveau compte"
+    },
+    "register": {
+      "title": "Créer un compte",
+      "role": "Je suis",
+      "roleUser": "Apprenant",
+      "roleCoach": "Formateur / Coach",
+      "roleCenter": "Centre de Formation",
+      "roleUserDesc": "Découvrez et suivez des formations",
+      "roleCoachDesc": "Créez et gérez vos propres formations",
+      "roleCenterDesc": "Gérez votre centre et vos salles",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "username": "Nom d'utilisateur",
+      "email": "Email",
+      "phone": "Téléphone",
+      "phonePlaceholder": "+212 6XX XX XX XX",
+      "password": "Mot de passe",
+      "confirmPassword": "Confirmer le mot de passe",
+      "passwordHint": "Minimum 8 caractères",
+      "submit": "Créer mon compte",
+      "loading": "Création du compte...",
+      "hasAccount": "Ou",
+      "loginLink": "connectez-vous à votre compte existant",
+      "terms": "En créant un compte, vous acceptez nos conditions d'utilisation et notre politique de confidentialité.",
+      "approval": "Votre compte sera soumis à validation par un administrateur."
+    }
+  },
+  "formations": {
+    "title": "Toutes les Formations",
+    "search": "Rechercher une formation...",
+    "allLevels": "Tous les niveaux",
+    "allCategories": "Toutes les catégories",
+    "levels": {
+      "beginner": "Débutant",
+      "intermediate": "Intermédiaire",
+      "advanced": "Avancé",
+      "all": "Tous niveaux"
+    },
+    "delivery": {
+      "in_person": "🏢 Présentiel",
+      "remote": "💻 En ligne",
+      "hybrid": "🔀 Hybride"
+    },
+    "enrolled": "inscrits",
+    "loading": "Chargement des formations...",
+    "noResults": "Aucune formation trouvée.",
+    "enrollNow": "S'inscrire maintenant",
+    "price": "Prix de la formation",
+    "startDate": "Date de début",
+    "duration": "Durée",
+    "spotsAvailable": "Places disponibles",
+    "averageRating": "Note moyenne",
+    "center": "Centre",
+    "program": "Programme",
+    "prerequisites": "Prérequis",
+    "description": "Description",
+    "instructor": "Formateur",
+    "level": "Niveau",
+    "mode": "Mode",
+    "paymentNotice": "Après inscription, vous recevrez les instructions de paiement par email"
+  },
+  "dashboard": {
+    "welcome": "Bienvenue",
+    "userSubtitle": "Découvrez de nouvelles formations et développez vos compétences",
+    "coachSubtitle": "Gérez vos formations et suivez vos étudiants",
+    "centerSubtitle": "Gérez votre centre et vos salles de formation",
+    "adminSubtitle": "Administrez la plateforme et gérez le contenu",
+    "level": "Niveau",
+    "totalPoints": "Points Totaux",
+    "credits": "Crédits",
+    "status": "Statut",
+    "approved": "✓ Approuvé",
+    "pending": "⏳ En attente",
+    "pendingApproval": {
+      "title": "Compte en attente d'approbation",
+      "coach": "Votre compte formateur est en cours de vérification par notre équipe. Vous serez notifié par email dès que votre compte sera approuvé.",
+      "center": "Votre compte centre de formation est en cours de vérification par notre équipe. Vous serez notifié par email dès que votre compte sera approuvé."
+    },
+    "quickActions": {
+      "myFormations": {
+        "title": "Mes Formations",
+        "description": "Gérer et créer de nouvelles formations"
+      },
+      "myStudents": {
+        "title": "Mes Étudiants",
+        "description": "Suivre la progression de vos étudiants"
+      },
+      "payments": {
+        "title": "Paiements",
+        "description": "Gérer les paiements et la réconciliation"
+      },
+      "rooms": {
+        "title": "Mes Salles",
+        "description": "Gérer les salles et la disponibilité"
+      },
+      "bookings": {
+        "title": "Réservations",
+        "description": "Voir toutes les réservations"
+      },
+      "stats": {
+        "title": "Statistiques",
+        "description": "Analyser les performances"
+      },
+      "explore": {
+        "title": "Explorer",
+        "description": "Découvrir de nouvelles formations"
+      },
+      "enrolledFormations": {
+        "title": "Mes Formations",
+        "description": "Voir mes formations en cours"
+      },
+      "badges": {
+        "title": "Badges & Points",
+        "description": "Voir mes accomplissements"
+      },
+      "profile": {
+        "title": "Mon Profil",
+        "description": "Gérer vos informations personnelles"
+      }
+    }
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "create": "Créer",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "viewAll": "Tout voir",
+    "more": "Plus",
+    "less": "Moins"
+  }
+}

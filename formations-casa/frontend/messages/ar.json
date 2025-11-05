@@ -1,0 +1,186 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "formations": "التكوينات",
+    "centers": "المراكز",
+    "coaches": "المدربون",
+    "login": "تسجيل الدخول",
+    "register": "التسجيل",
+    "dashboard": "لوحة التحكم",
+    "logout": "تسجيل الخروج",
+    "admin": "الإدارة",
+    "points": "نقاط"
+  },
+  "hero": {
+    "title": "التكوين المهني في الدار البيضاء",
+    "subtitle": "اكتشف واحجز أفضل التكوينات في المغرب",
+    "browseFormations": "استكشف التكوينات",
+    "becomeCoach": "كن مدرباً"
+  },
+  "features": {
+    "title": "كيف يعمل",
+    "browse": {
+      "title": "استكشف",
+      "description": "اكتشف مئات التكوينات المهنية"
+    },
+    "enroll": {
+      "title": "سجل وتعلم",
+      "description": "سجل واستلم تعليمات الدفع وابدأ التعلم"
+    },
+    "earn": {
+      "title": "احصل على الشارات",
+      "description": "أكمل الدورات واكسب النقاط وافتح الإنجازات"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "تسجيل الدخول إلى حسابك",
+      "username": "اسم المستخدم",
+      "password": "كلمة المرور",
+      "remember": "تذكرني",
+      "forgot": "نسيت كلمة المرور؟",
+      "submit": "تسجيل الدخول",
+      "loading": "جاري تسجيل الدخول...",
+      "noAccount": "أو",
+      "createAccount": "إنشاء حساب جديد"
+    },
+    "register": {
+      "title": "إنشاء حساب",
+      "role": "أنا",
+      "roleUser": "متعلم",
+      "roleCoach": "مدرب / كوتش",
+      "roleCenter": "مركز تكوين",
+      "roleUserDesc": "اكتشف وتابع التكوينات",
+      "roleCoachDesc": "أنشئ وأدر تكويناتك الخاصة",
+      "roleCenterDesc": "أدر مركزك وقاعاتك",
+      "firstName": "الاسم الأول",
+      "lastName": "اسم العائلة",
+      "username": "اسم المستخدم",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "phonePlaceholder": "+212 6XX XX XX XX",
+      "password": "كلمة المرور",
+      "confirmPassword": "تأكيد كلمة المرور",
+      "passwordHint": "8 أحرف على الأقل",
+      "submit": "إنشاء حسابي",
+      "loading": "جاري إنشاء الحساب...",
+      "hasAccount": "أو",
+      "loginLink": "تسجيل الدخول إلى حسابك الحالي",
+      "terms": "بإنشاء حساب، فإنك توافق على شروط الخدمة وسياسة الخصوصية الخاصة بنا.",
+      "approval": "سيخضع حسابك لموافقة المسؤول."
+    }
+  },
+  "formations": {
+    "title": "جميع التكوينات",
+    "search": "البحث عن تكوين...",
+    "allLevels": "جميع المستويات",
+    "allCategories": "جميع الفئات",
+    "levels": {
+      "beginner": "مبتدئ",
+      "intermediate": "متوسط",
+      "advanced": "متقدم",
+      "all": "جميع المستويات"
+    },
+    "delivery": {
+      "in_person": "🏢 حضوري",
+      "remote": "💻 عن بعد",
+      "hybrid": "🔀 مختلط"
+    },
+    "enrolled": "المسجلون",
+    "loading": "جاري تحميل التكوينات...",
+    "noResults": "لم يتم العثور على تكوينات.",
+    "enrollNow": "سجل الآن",
+    "price": "سعر التكوين",
+    "startDate": "تاريخ البدء",
+    "duration": "المدة",
+    "spotsAvailable": "الأماكن المتاحة",
+    "averageRating": "التقييم المتوسط",
+    "center": "المركز",
+    "program": "البرنامج",
+    "prerequisites": "المتطلبات الأساسية",
+    "description": "الوصف",
+    "instructor": "المدرب",
+    "level": "المستوى",
+    "mode": "الوضع",
+    "paymentNotice": "بعد التسجيل، ستتلقى تعليمات الدفع عبر البريد الإلكتروني"
+  },
+  "dashboard": {
+    "welcome": "مرحباً",
+    "userSubtitle": "اكتشف تكوينات جديدة وطور مهاراتك",
+    "coachSubtitle": "أدر تكويناتك وتابع طلابك",
+    "centerSubtitle": "أدر مركزك وقاعات التكوين",
+    "adminSubtitle": "إدارة المنصة والمحتوى",
+    "level": "المستوى",
+    "totalPoints": "مجموع النقاط",
+    "credits": "الأرصدة",
+    "status": "الحالة",
+    "approved": "✓ موافق عليه",
+    "pending": "⏳ قيد الانتظار",
+    "pendingApproval": {
+      "title": "الحساب في انتظار الموافقة",
+      "coach": "حساب المدرب الخاص بك قيد المراجعة من قبل فريقنا. سيتم إخطارك عبر البريد الإلكتروني بمجرد الموافقة على حسابك.",
+      "center": "حساب مركز التكوين الخاص بك قيد المراجعة من قبل فريقنا. سيتم إخطارك عبر البريد الإلكتروني بمجرد الموافقة على حسابك."
+    },
+    "quickActions": {
+      "myFormations": {
+        "title": "تكويناتي",
+        "description": "إدارة وإنشاء تكوينات جديدة"
+      },
+      "myStudents": {
+        "title": "طلابي",
+        "description": "تتبع تقدم طلابك"
+      },
+      "payments": {
+        "title": "المدفوعات",
+        "description": "إدارة المدفوعات والتسوية"
+      },
+      "rooms": {
+        "title": "قاعاتي",
+        "description": "إدارة القاعات والتوفر"
+      },
+      "bookings": {
+        "title": "الحجوزات",
+        "description": "عرض جميع الحجوزات"
+      },
+      "stats": {
+        "title": "الإحصائيات",
+        "description": "تحليل الأداء"
+      },
+      "explore": {
+        "title": "استكشف",
+        "description": "اكتشف تكوينات جديدة"
+      },
+      "enrolledFormations": {
+        "title": "تكويناتي",
+        "description": "عرض تكويناتي الجارية"
+      },
+      "badges": {
+        "title": "الشارات والنقاط",
+        "description": "عرض إنجازاتي"
+      },
+      "profile": {
+        "title": "ملفي الشخصي",
+        "description": "إدارة معلوماتك الشخصية"
+      }
+    }
+  },
+  "common": {
+    "loading": "جاري التحميل...",
+    "error": "خطأ",
+    "success": "نجح",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "create": "إنشاء",
+    "search": "بحث",
+    "filter": "تصفية",
+    "sort": "فرز",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "viewAll": "عرض الكل",
+    "more": "المزيد",
+    "less": "أقل"
+  }
+}
