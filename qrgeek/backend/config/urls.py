@@ -25,6 +25,7 @@ urlpatterns = [
     path('api/qr/', include('qrcodes.urls')),
     path('api/analytics/', include('analytics.urls')),
     path('api/industries/', include('industries.urls')),
+    path('api/payments/', include('payments.urls')),
 
     # URL Redirect (for tracking QR scans)
     path('', include('qrcodes.redirect_urls')),

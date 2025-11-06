@@ -1,0 +1,23 @@
+[Unit]
+Description=QRGeek Celery Worker
+After=network.target redis.service postgresql.service
+
+[Service]
+Type=forking
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/qrgeek/backend
+Environment="PATH=/var/www/qrgeek/venv/bin"
+Environment="DJANGO_SETTINGS_MODULE=config.settings"
+EnvironmentFile=/var/www/qrgeek/backend/.env
+
+ExecStart=/var/www/qrgeek/venv/bin/celery -A config worker \
+    --loglevel=info \
+    --logfile=/var/log/qrgeek/celery.log \
+    --pidfile=/var/run/qrgeek/celery.pid
+
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
